@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p>
+    <p> nhap nam can kiem tra:</p>
+    <input type = "text" name = " txName" id="txName">
+    <input type ="button" value = "Kiem tra" onclick="kiemTraNamNhuan()"/>
+</p>
+<script language="javascript">
+    function kiemTraNamNhuan () {
+        var nam = document.getElementById ("txName").value;
+        if (nam %100 == 0) {
+            if (nam %400==0) {
+                alert ('nam'+nam+'la nam nhuan');
+             } else { 
+                    alert('nam'+nam+':khong la nam nhuan')};
+                alert('nam'+nam +':khong la nam nhuan');
+            }
+        else if (nam %400==0) {
+            alert ('nam'+nam+': la nam nhuan');
+        }else { alert ('nam'+nam+': khong la nam nhuan'); }
+    }
+
+
+</script>
+
+
+</body>
+</html>
